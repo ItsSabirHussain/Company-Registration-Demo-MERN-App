@@ -4,7 +4,7 @@ const schema = require('mongoose')
 const Admin = require("../models/admin")
 
 const mongoose = require("mongoose");
-const keys = require("../config/keys");
+const keys = require("./keys");
 const opts = {};
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
 opts.secretOrKey = keys.secretOrKey;
